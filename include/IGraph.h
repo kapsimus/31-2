@@ -4,7 +4,7 @@
 class IGraph {
 public:
     virtual ~IGraph() {}
-    IGraph() {};
+    IGraph() = default;;
     IGraph(IGraph *_oth) {};
     virtual void AddEdge(int from, int to) = 0; // Метод принимает вершины начала и конца ребра и добавляет ребро
     virtual int VerticesCount() const = 0; // Метод должен считать текущее количество вершин
